@@ -14,7 +14,7 @@ class ItemEstoque:
         self.qtd += adicionando
         print(
             "\n"
-            f"📥 Foi adicionado {adicionando} {self.nome}(s)\n"
+            f"➕ Foi adicionado {adicionando} {self.nome}(s)\n"
             f"📦 Estoque atual: {self.qtd} {self.nome}(s)\n"
             "\n"
         )
@@ -27,7 +27,7 @@ class ItemEstoque:
             self.qtd -= removendo
             print(
                 "\n"
-                f"🛒 Foram removidos {removendo} {self.nome}(s)\n"
+                f"➖ Foram removidos {removendo} {self.nome}(s)\n"
                 f"📦 Resta no estoque: {self.qtd} {self.nome}(s)\n"
                 "\n"
             )
@@ -42,7 +42,7 @@ class ItemEstoque:
         else:
             print(
                 "\n"
-                "❌ Sem estoque deste produto!"
+                "❌ Sem estoque disponível deste produto!"
                 "\n"
             )
     
@@ -54,7 +54,7 @@ class ItemEstoque:
             "\n"
             "========== INFORMAÇÕES DO ESTOQUE ==========\n"
             f"📦 Produto: {self.nome}\n"
-            f"📊 Quantidade: {self.qtd}\n"
+            f"📦Quantidade: {self.qtd}\n"
             f"💰 Preço Unitário: R$ {self.preco:.2f}\n"
             f"💵 Valor Total em Estoque: R$ {self.calcularTotal():.2f}\n"
             "===========================================\n"
@@ -63,3 +63,4 @@ class ItemEstoque:
 item = ItemEstoque("Adidas SuperStar", 5, 500)
 print(item)
 item.removerEstoque(3)
+item.adicionarEstoque(3)
