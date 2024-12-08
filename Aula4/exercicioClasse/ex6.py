@@ -8,7 +8,7 @@ class Person:
         return (
             "\n"
             "==========INFORMAÇÕES==========\n"
-            f"🌟 Nome: {self.name  }\n"
+            f"🌟 Nome: {self.name}\n"
             f"🎂 Idade: {self.age}\n"
             "==============================="
     )

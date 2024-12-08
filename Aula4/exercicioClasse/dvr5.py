@@ -5,7 +5,7 @@ class ItemEstoque:
         self.preco = precoUnitario
     
     def adicionarEstoque(self, adicionando: int):
-        if adicionando < 0:
+        if adicionando <= 0:
             print(
                 "\n"
                 "❌ Não é possível adicionar uma quantidade negativa ao estoque!"
